@@ -1,0 +1,17 @@
+Huffman coding is a greedy algorithm used for lossless data compression. It was developed by David A. Huffman in 1952 while he was a Ph.D. student at MIT.
+
+The main idea is that characters appearing more frequently are encoded with shorter bit sequences, while rare characters get longer codes. This allows significant size reduction compared to fixed-length encoding.
+
+The algorithm works as follows:
+1. Calculate the frequency of each character in the text
+2. Build a Huffman tree where leaves are characters with their frequencies
+3. Generate prefix codes for each character based on the tree path
+4. Encode the text using the generated codes
+
+Advantages of Huffman coding:
+- Optimal compression for given character frequencies
+- Simple to implement
+- Fast operation with O(n log n) complexity
+- Lossless decompression is possible
+
+The algorithm is widely used in many compression formats such as DEFLATE (ZIP, GZIP), JPEG, MP3, and others. It forms the foundation of modern data compression techniques.
